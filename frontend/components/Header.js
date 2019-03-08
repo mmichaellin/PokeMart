@@ -1,6 +1,20 @@
-import Navbar from "./Navbar";
 import Link from "next/link";
 import styled from "styled-components";
+import Router from "next/router";
+import NProgress from "nprogress";
+import Navbar from "./Navbar";
+
+Router.onRouteChangeStart = () => {
+  NProgress.start();
+};
+
+Router.onRouteChangeComplete = () => {
+  NProgress.done();
+};
+
+Router.onRouteChangeError = () => {
+  NProgress.done();
+};
 
 const Logo = styled.h1`
   font-size: 4rem;
@@ -15,7 +29,7 @@ const Logo = styled.h1`
     text-transform: uppercase;
     text-decoration: none;
   }
-  @media (max-width: 1300px){
+  @media (max-width: 1300px) {
     margin: 0;
     text-align: center;
   }
