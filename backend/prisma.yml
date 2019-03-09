@@ -1,7 +1,6 @@
-#endpoint: ${env:PRISMA_ENDPOINT}
-endpoint: https://us1.prisma.sh/pokemart/dev
+endpoint: ${env:PRISMA_ENDPOINT}
+# endpoint: https://us1.prisma.sh/pokemart/dev
 datamodel: datamodel.prisma
-# datamodel: datamodel.graphql
 # secret: ${env:PRISMA_SECRET}
 hooks:
   post-deploy:
