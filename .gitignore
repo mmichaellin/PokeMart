@@ -4,6 +4,4 @@ variables.env
 package-lock.json*
 .env*
 .next*
-datamodel.prisma*
-prisma.yml*
 generated*
