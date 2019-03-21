@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/pokemart-workspace/pokemart/dev
-# timestamp: Mon Mar 18 2019 20:43:09 GMT-0400 (Eastern Daylight Time)
+# timestamp: Thu Mar 21 2019 14:27:22 GMT-0400 (Eastern Daylight Time)
 
 type AggregateItem {
   count: Int!
@@ -34,6 +34,7 @@ type ItemConnection {
 }
 
 input ItemCreateInput {
+  id: ID
   title: String!
   description: String!
   image: String
@@ -455,6 +456,7 @@ type UserConnection {
 }
 
 input UserCreateInput {
+  id: ID
   name: String!
   email: String!
 }
