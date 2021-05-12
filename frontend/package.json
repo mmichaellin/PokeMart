@@ -70,7 +70,7 @@
       "./jest.setup.js"
     ]
   },
-  "//": "This is our babel config, preferred this over a .babelrc file",
+  "//": "This is just a babel config, preferred this over a .babelrc file",
   "babel": {
     "env": {
       "development": {
